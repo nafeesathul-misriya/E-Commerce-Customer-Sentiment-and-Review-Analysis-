@@ -1,0 +1,2 @@
+# E-Commerce-Customer-Sentiment-and-Review-Analysis-
+Developed a Tableau-based analytics project to analyze customer reviews and sentiment patterns through interactive dashboards and visual reporting. Performed data cleaning and trend analysis to identify customer satisfaction and purchasing behavior. Created dynamic Tableau visualizations to support business growth and data-driven decision-making.
