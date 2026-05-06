@@ -1,0 +1,2610 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ecommerce_sentiment_data' inline='true' name='federated.0gpbryz1b31sfl15nswtk15we9m8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ecommerce_sentiment_data' name='textscan.0qmhzp7171xwcm1f8g92y1w6zqbp'>
+            <connection class='textscan' directory='C:/Users/hp/OneDrive/Desktop/Project/E-comerce Review' filename='ecommerce_sentiment_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0qmhzp7171xwcm1f8g92y1w6zqbp' name='ecommerce_sentiment_data.csv' table='[ecommerce_sentiment_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Order_ID' ordinal='0' />
+            <column datatype='date' name='Order_Date' ordinal='1' />
+            <column datatype='string' name='Product_Category' ordinal='2' />
+            <column datatype='string' name='Product_Name' ordinal='3' />
+            <column datatype='string' name='Customer_Segment' ordinal='4' />
+            <column datatype='string' name='Review_Text' ordinal='5' />
+            <column datatype='integer' name='Rating' ordinal='6' />
+            <column datatype='real' name='Sentiment_Score' ordinal='7' />
+            <column datatype='string' name='Sentiment_Label' ordinal='8' />
+            <column datatype='string' name='Response_Status' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order_ID]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Order_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order_Date]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Order_Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_Category]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Product_Category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product_Name]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Product_Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer_Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Customer_Segment]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Customer_Segment</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Review_Text</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Review_Text]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Review_Text</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sentiment_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sentiment_Score]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Sentiment_Score</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sentiment_Label</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sentiment_Label]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Sentiment_Label</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Response_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Response_Status]</local-name>
+            <parent-name>[ecommerce_sentiment_data.csv]</parent-name>
+            <remote-alias>Response_Status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Pending Response %' datatype='real' name='[Calculation_0931603234664457]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Response_Status]= &apos;Pending&apos; THEN [Order_ID] END) / COUNTD([Order_ID])' />
+      </column>
+      <column caption='Positive Reviews' datatype='real' name='[Calculation_0931603246948362]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Sentiment_Label]=&apos;Positive&apos; THEN [Order_ID] END)/COUNTD([Order_ID])' />
+      </column>
+      <column caption='Negative Statment' datatype='real' name='[Calculation_0931603248406539]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Sentiment_Label] = &apos;Negative&apos; THEN [Order_ID] END) / COUNTD([Order_ID])' />
+      </column>
+      <column caption='Net Sentimen Score' datatype='real' name='[Calculation_0931603249623052]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(COUNTD(IF [Sentiment_Label] = &apos;Positive&apos; THEN [Order_ID] END) - COUNTD(IF [Sentiment_Label] = &apos;Negative&apos; THEN [Order_ID] END)) / COUNTD([Order_ID])' />
+      </column>
+      <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+      <column caption='Order Date' datatype='date' name='[Order_Date]' role='dimension' type='ordinal' />
+      <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+      <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[Product_Name]' role='dimension' type='nominal' />
+      <column aggregation='None' datatype='integer' name='[Rating (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='-1' formula='[Rating]' peg='0' size='0.865' />
+      </column>
+      <column datatype='integer' name='[Rating]' role='measure' type='quantitative' />
+      <column caption='Response Status' datatype='string' name='[Response_Status]' role='dimension' type='nominal' />
+      <column caption='Review Text' datatype='string' name='[Review_Text]' role='dimension' type='nominal' />
+      <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+      <column caption='Sentiment Score' datatype='real' name='[Sentiment_Score]' role='measure' type='quantitative' />
+      <column caption='ecommerce_sentiment_data.csv' datatype='table' name='[__tableau_internal_object_id__].[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]' role='measure' type='quantitative' />
+      <column-instance column='[Order_Date]' derivation='Month' name='[mn:Order_Date:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Response_Status]' derivation='None' name='[none:Response_Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+      <group caption='Action (MONTH(Order Date))' hidden='true' name='[Action (MONTH(Order Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[mn:Order_Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Sentiment Label)' hidden='true' name='[Action (Sentiment Label)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Sentiment_Label]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hp/AppData/Local/Temp/TableauTemp/#TableauTemp_0wj9r6v10pu77q1acmkjd1dmtlqy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/05/2026 02:09:20 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Order_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Date</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>363</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product_Category</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product_Name</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Customer_Segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Customer_Segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Customer_Segment</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Review_Text</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Review_Text]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Review_Text</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sentiment_Score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sentiment_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sentiment_Score</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>183</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sentiment_Label</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sentiment_Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sentiment_Label</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Response_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Response_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Response_Status</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ecommerce_sentiment_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Sentiment_Label:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>&quot;Positive&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Negative&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Neutral&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Sentiment_Label:nk]&#10;[:Measure Names]' type='palette'>
+            <map to='#1c2b45'>
+              <multibucket>
+                <bucket>&quot;Positive&quot;</bucket>
+                <bucket>&quot;[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217592325:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#2f4e79'>
+              <multibucket>
+                <bucket>&quot;Negative&quot;</bucket>
+                <bucket>&quot;[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217592325:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+            <map to='#9aa5b1'>
+              <multibucket>
+                <bucket>&quot;Neutral&quot;</bucket>
+                <bucket>&quot;[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217592325:qk]&quot;</bucket>
+              </multibucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Response_Status:nk]' type='palette'>
+            <map to='#1c2b45'>
+              <bucket>&quot;Replied&quot;</bucket>
+            </map>
+            <map to='#9aa5b1'>
+              <bucket>&quot;Pending&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product_Category:nk]' palette='purple_10_0' type='palette'>
+            <map to='#1c2b45'>
+              <bucket>&quot;Beauty&quot;</bucket>
+            </map>
+            <map to='#2f4e79'>
+              <bucket>&quot;Electronics&quot;</bucket>
+            </map>
+            <map to='#3f5d82'>
+              <bucket>&quot;Fashion&quot;</bucket>
+            </map>
+            <map to='#6e8fb3'>
+              <bucket>&quot;Home &amp; Kitchen&quot;</bucket>
+            </map>
+            <map to='#9aa5b1'>
+              <bucket>&quot;Sports&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Customer_Segment:nk]' type='palette'>
+            <map to='#76b7b2'>
+              <bucket>&quot;Consumer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Small Business&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Corporate&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ecommerce_sentiment_data.csv' id='ecommerce_sentiment_data.csv_52DB3432920348C88BF91E094FEE61CC'>
+            <properties context=''>
+              <relation connection='textscan.0qmhzp7171xwcm1f8g92y1w6zqbp' name='ecommerce_sentiment_data.csv' table='[ecommerce_sentiment_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Order_ID' ordinal='0' />
+                  <column datatype='date' name='Order_Date' ordinal='1' />
+                  <column datatype='string' name='Product_Category' ordinal='2' />
+                  <column datatype='string' name='Product_Name' ordinal='3' />
+                  <column datatype='string' name='Customer_Segment' ordinal='4' />
+                  <column datatype='string' name='Review_Text' ordinal='5' />
+                  <column datatype='integer' name='Rating' ordinal='6' />
+                  <column datatype='real' name='Sentiment_Score' ordinal='7' />
+                  <column datatype='string' name='Sentiment_Label' ordinal='8' />
+                  <column datatype='string' name='Response_Status' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+      <datasources>
+        <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+        <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+        <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+        <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+        <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]'>
+        <groupfilter function='level-members' level='[none:Customer_Segment:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]'>
+        <groupfilter function='level-members' level='[none:Product_Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]'>
+        <groupfilter function='level-members' level='[none:Sentiment_Label:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_2D584F107C304FFEBA73295E2DAB410B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Overall Sentiment Distribution' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Sentiment Label,Measure Names' />
+        <param name='target' value='Overall Sentiment Distribution' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_D193D2FF073146A5928717CB13877FF1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Overall Sentiment Distribution' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Average Rating'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Rating]' role='measure' type='quantitative' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Rating]' derivation='Avg' name='[avg:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#6e7d99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[avg:Rating:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='10'>Avarege Rating</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff'><![CDATA[<[federated.0gpbryz1b31sfl15nswtk15we9m8].[avg:Rating:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B79FA643-E305-47F4-A531-CD6A1A40C4D4}' />
+    </worksheet>
+    <worksheet name='Avg Sentiment Score'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column caption='Sentiment Score' datatype='real' name='[Sentiment_Score]' role='measure' type='quantitative' />
+            <column-instance column='[Sentiment_Score]' derivation='Avg' name='[avg:Sentiment_Score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#6e7d99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[avg:Sentiment_Score:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='10'>Avg  Sentiment Score</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff'><![CDATA[<[federated.0gpbryz1b31sfl15nswtk15we9m8].[avg:Sentiment_Score:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{223E9A84-663F-4D2A-BB5C-2351A0E0CA46}' />
+    </worksheet>
+    <worksheet name='Category-wise Sentiment Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order Date' datatype='date' name='[Order_Date]' role='dimension' type='ordinal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column caption='Sentiment Score' datatype='real' name='[Sentiment_Score]' role='measure' type='quantitative' />
+            <column-instance column='[Order_Date]' derivation='Month' name='[mn:Order_Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Score]' derivation='Sum' name='[sum:Sentiment_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='21' />
+            <format attr='background-color' scope='rows' value='#f5f5f5' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#f5f5f5' />
+            <format attr='background-color' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk]' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' scope='rows' value='0' />
+            <format attr='wrap' scope='rows' value='off' />
+            <format attr='text-align' scope='rows' value='left' />
+            <format attr='vertical-align' scope='rows' value='bottom' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+                <format attr='mark-markers-mode' value='none' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+                <format attr='mark-markers-mode' value='none' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f9a655' />
+                <format attr='mark-markers-mode' value='none' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk] + [federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk])</rows>
+        <cols>[federated.0gpbryz1b31sfl15nswtk15we9m8].[mn:Order_Date:ok]</cols>
+      </table>
+      <simple-id uuid='{3C35FBEA-E7C0-4B2C-9C58-1F84F7304606}' />
+    </worksheet>
+    <worksheet name='Customer Segment Performance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Response Status' datatype='string' name='[Response_Status]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Order_ID]' derivation='Count' name='[cnt:Order_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Response_Status]' derivation='None' name='[none:Response_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Response_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]</rows>
+        <cols>([federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk] / [federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Response_Status:nk])</cols>
+      </table>
+      <simple-id uuid='{B417D506-EACE-460C-B5DA-42C72C08D969}' />
+    </worksheet>
+    <worksheet name='Filter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A4DD7850-3A90-4AF1-AFC5-2621D90DFB8E}' />
+    </worksheet>
+    <worksheet name='Negative Reviews'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Negative Statment' datatype='real' name='[Calculation_0931603248406539]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Sentiment_Label] = &apos;Negative&apos; THEN [Order_ID] END) / COUNTD([Order_ID])' />
+            </column>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0931603248406539]' derivation='User' name='[usr:Calculation_0931603248406539:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#6e7d99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[usr:Calculation_0931603248406539:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='10'>Negative Sentiment %</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff'><![CDATA[<[federated.0gpbryz1b31sfl15nswtk15we9m8].[usr:Calculation_0931603248406539:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D2105B89-EC06-4674-A0F5-2504B7EC0C86}' />
+    </worksheet>
+    <worksheet name='Overall Sentiment Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='0' datatype='integer' name='[Calculation_0931603217592325]' role='measure' type='quantitative' user:unnamed='Overall Sentiment Distribution'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='0' datatype='integer' name='[Calculation_0931603217649671]' role='measure' type='quantitative' user:unnamed='Overall Sentiment Distribution'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Order_ID]' derivation='Count' name='[cnt:Order_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0931603217592325]' derivation='Sum' name='[sum:Calculation_0931603217592325:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_0931603217649671]' derivation='Sum' name='[sum:Calculation_0931603217649671:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217649671:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217649671:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217592325:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217592325:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]' />
+              <wedge-size column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' />
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[:Measure Names]' />
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.813093900680542' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217649671:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217592325:qk] + [federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Calculation_0931603217649671:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{601ABEEB-0449-422F-A1DD-E5C20682369C}' />
+    </worksheet>
+    <worksheet name='Positive Reviews'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Positive Reviews %</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Pending Response %' datatype='real' name='[Calculation_0931603234664457]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD(IF [Response_Status]= &apos;Pending&apos; THEN [Order_ID] END) / COUNTD([Order_ID])' />
+            </column>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Response Status' datatype='string' name='[Response_Status]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0931603234664457]' derivation='User' name='[usr:Calculation_0931603234664457:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#6e7d99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[usr:Calculation_0931603234664457:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='10'>Positive Sentiment %</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff'><![CDATA[<[federated.0gpbryz1b31sfl15nswtk15we9m8].[usr:Calculation_0931603234664457:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{804E3010-E807-4F57-AB82-5B5D348CA140}' />
+    </worksheet>
+    <worksheet name='Product Satisfaction Metrix'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Rating]' role='measure' type='quantitative' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Order_ID]' derivation='Count' name='[cnt:Order_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rating]' derivation='None' name='[none:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='cell-w' value='20' />
+            <format attr='cell-h' value='20' />
+            <format attr='cell' value='20' />
+            <format attr='cell-q' value='100' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2d7df</color>
+                <color>#b6bfce</color>
+                <color>#9ba7bd</color>
+                <color>#8392ac</color>
+                <color>#6c7d9b</color>
+                <color>#586a89</color>
+                <color>#465878</color>
+                <color>#364867</color>
+                <color>#283856</color>
+                <color>#1c2b45</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5f5f5' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.7999999523162842' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</rows>
+        <cols>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Rating:qk]</cols>
+      </table>
+      <simple-id uuid='{F795ED23-58FC-4A4A-95A2-C480684B8EF8}' />
+    </worksheet>
+    <worksheet name='Rating Distribution Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column aggregation='None' datatype='integer' name='[Rating (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='-1' formula='[Rating]' peg='0' size='0.865' />
+            </column>
+            <column datatype='integer' name='[Rating]' role='measure' type='quantitative' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Rating]' derivation='Count' name='[cnt:Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rating (bin)]' derivation='None' name='[none:Rating (bin):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#1c2b45' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Rating:qk]</rows>
+        <cols>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Rating (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Rating (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{84BC5AAA-C7CB-4E17-8B34-1F4A9B58E2BC}' />
+    </worksheet>
+    <worksheet name='Response Status by Sentiment'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Response Status' datatype='string' name='[Response_Status]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Order_ID]' derivation='Count' name='[cnt:Order_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Response_Status]' derivation='None' name='[none:Response_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Response_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]</rows>
+        <cols>([federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk] / [federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Response_Status:nk])</cols>
+      </table>
+      <simple-id uuid='{F82D57AE-E112-46C1-9BAC-678AB12505B7}' />
+    </worksheet>
+    <worksheet name='Sentiment Insight by Segment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='12'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Order_ID]' derivation='Count' name='[cnt:Order_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='wrap' data-class='total' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='wrap' scope='rows' value='on' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='display' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]' value='false' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#d2d7df</color>
+                <color>#b6bfce</color>
+                <color>#9ba7bd</color>
+                <color>#8392ac</color>
+                <color>#6c7d9b</color>
+                <color>#586a89</color>
+                <color>#465878</color>
+                <color>#364867</color>
+                <color>#283856</color>
+                <color>#1c2b45</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='rows' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' />
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</rows>
+        <cols>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</cols>
+      </table>
+      <simple-id uuid='{05FA7A94-0B8C-4EE4-B77F-4C42153EC779}' />
+    </worksheet>
+    <worksheet name='Sheet 14'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order Date' datatype='date' name='[Order_Date]' role='dimension' type='ordinal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column caption='Sentiment Score' datatype='real' name='[Sentiment_Score]' role='measure' type='quantitative' />
+            <column-instance column='[Order_Date]' derivation='Month' name='[mn:Order_Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Score]' derivation='Sum' name='[sum:Sentiment_Score:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</rows>
+        <cols>[federated.0gpbryz1b31sfl15nswtk15we9m8].[mn:Order_Date:ok]</cols>
+      </table>
+      <simple-id uuid='{F34DFAE4-861C-4BF5-AE33-B721BA522FFB}' />
+    </worksheet>
+    <worksheet name='Total Reviews'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='18'>Total Reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+            <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+            <column caption='Order ID' datatype='string' name='[Order_ID]' role='dimension' type='nominal' />
+            <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+            <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+            <column-instance column='[Order_ID]' derivation='Count' name='[cnt:Order_ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]'>
+            <groupfilter function='level-members' level='[Sentiment_Label]' user:ui-action-filter='[Action4_D9B0EE8A202B429FB1EECC714C57BE73]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[Action (Sentiment Label)]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]</column>
+            <column>[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='48' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='color' data-class='subtotal' value='#f17b79' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#6e7d99' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#ffffff' fontsize='10'>Total Reviews</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#ffffff' fontsize='10'><![CDATA[<[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='on' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0740C81D-4004-4798-9FD6-2FC720BD5F37}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#1f2a44' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_3' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='ecommerce_sentiment_data' name='federated.0gpbryz1b31sfl15nswtk15we9m8' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0gpbryz1b31sfl15nswtk15we9m8'>
+        <column caption='Customer Segment' datatype='string' name='[Customer_Segment]' role='dimension' type='nominal' />
+        <column caption='Product Category' datatype='string' name='[Product_Category]' role='dimension' type='nominal' />
+        <column caption='Sentiment Label' datatype='string' name='[Sentiment_Label]' role='dimension' type='nominal' />
+        <column-instance column='[Customer_Segment]' derivation='None' name='[none:Customer_Segment:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product_Category]' derivation='None' name='[none:Product_Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Sentiment_Label]' derivation='None' name='[none:Sentiment_Label:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='52' param='horz' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='98002' id='6' type-v2='layout-basic' w='99034' x='483' y='999'>
+              <zone forceUpdate='true' h='7611' id='3' type-v2='text' w='82680' x='8509' y='999'>
+                <formatted-text>
+                  <run bold='true' fontcolor='#ffffff' fontsize='22'>E-commerce</run>
+                  <run fontcolor='#ffffff' fontsize='22'>Æ </run>
+                  <run bold='true' fontcolor='#ffffff' fontsize='22'>Customer Sentiment Analysis Dashboard</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37695' id='5' name='Overall Sentiment Distribution' w='26604' x='483' y='20220'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='15' name='Total Reviews' show-title='false' w='13026' x='483' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='16' name='Average Rating' show-title='false' w='13208' x='54184' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='17' name='Avg Sentiment Score' show-title='false' w='13578' x='13509' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='18' name='Positive Reviews' show-title='false' w='13579' x='27087' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='19' name='Negative Reviews' show-title='false' w='13518' x='40666' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41086' id='25' name='Product Satisfaction Metrix' w='28254' x='71263' y='57915'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='32' mode='checkdropdown' name='Overall Sentiment Distribution' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' show-filter-state='false' show-search='false' type-v2='filter' values='database' w='10725' x='88792' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='33' mode='dropdown' name='Overall Sentiment Distribution' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]' type-v2='filter' values='database' w='10287' x='78505' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37695' id='37' name='Category-wise Sentiment Trend' w='44176' x='27087' y='20220'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41086' id='40' name='Sentiment Insight by Segment' w='26604' x='483' y='57915'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='41086' id='44' name='Rating Distribution Analysis' w='44176' x='27087' y='57915'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37695' id='48' name='Customer Segment Performance' w='28254' x='71263' y='20220'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11610' id='53' mode='dropdown' name='Category-wise Sentiment Trend' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]' type-v2='filter' values='database' w='11113' x='67392' y='8610'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7611' id='54' is-scaled='1' param='C:/Users/hp/OneDrive/Pictures/79225065-online-shopping-icons-set-icon-vector-illustration-design-graphic.jpg' type-v2='bitmap' w='8026' x='483' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7611' id='55' is-scaled='1' param='C:/Users/hp/OneDrive/Pictures/Screenshots/Screenshot 2026-02-26 181148.png' type-v2='bitmap' w='8328' x='91189' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2600' minheight='2600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='57' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='56' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone fixed-size='53' h='7611' id='54' is-fixed='true' is-scaled='1' param='C:/Users/hp/OneDrive/Pictures/79225065-online-shopping-icons-set-icon-vector-illustration-design-graphic.jpg' type-v2='bitmap' w='8026' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='7611' id='3' type-v2='text' w='82680' x='8509' y='999'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#ffffff' fontsize='22'>E-commerce</run>
+                    <run fontcolor='#ffffff' fontsize='22'>Æ </run>
+                    <run bold='true' fontcolor='#ffffff' fontsize='22'>Customer Sentiment Analysis Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='53' h='7611' id='55' is-fixed='true' is-scaled='1' param='C:/Users/hp/OneDrive/Pictures/Screenshots/Screenshot 2026-02-26 181148.png' type-v2='bitmap' w='8328' x='91189' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='85' h='11610' id='15' is-fixed='true' name='Total Reviews' show-title='false' w='13026' x='483' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='85' h='11610' id='17' is-fixed='true' name='Avg Sentiment Score' show-title='false' w='13578' x='13509' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='85' h='11610' id='18' is-fixed='true' name='Positive Reviews' show-title='false' w='13579' x='27087' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='85' h='11610' id='19' is-fixed='true' name='Negative Reviews' show-title='false' w='13518' x='40666' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='85' h='11610' id='16' is-fixed='true' name='Average Rating' show-title='false' w='13208' x='54184' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11610' id='32' mode='checkdropdown' name='Overall Sentiment Distribution' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' show-filter-state='false' show-search='false' type-v2='filter' values='database' w='10725' x='88792' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11610' id='33' mode='dropdown' name='Overall Sentiment Distribution' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]' type-v2='filter' values='database' w='10287' x='78505' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37695' id='5' is-fixed='true' name='Overall Sentiment Distribution' w='26604' x='483' y='20220'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11610' id='53' mode='dropdown' name='Category-wise Sentiment Trend' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]' type-v2='filter' values='database' w='11113' x='67392' y='8610'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37695' id='37' is-fixed='true' name='Category-wise Sentiment Trend' w='44176' x='27087' y='20220'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37695' id='48' is-fixed='true' name='Customer Segment Performance' w='28254' x='71263' y='20220'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41086' id='40' is-fixed='true' name='Sentiment Insight by Segment' w='26604' x='483' y='57915'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41086' id='44' is-fixed='true' name='Rating Distribution Analysis' w='44176' x='27087' y='57915'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41086' id='25' is-fixed='true' name='Product Satisfaction Metrix' w='28254' x='71263' y='57915'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{9DEF4018-B03D-435E-A7FD-89E49685F632}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Total Reviews'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{97101D98-0FDE-449B-8B06-0421497F0309}' />
+    </window>
+    <window class='worksheet' name='Average Rating'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7C65FA67-0539-40BC-B38D-21D140A70930}' />
+    </window>
+    <window class='worksheet' name='Avg Sentiment Score'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FC5C78B1-6015-4FCD-9839-972AEC04CB8F}' />
+    </window>
+    <window class='worksheet' name='Filter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Customer_Segment:nk]' type='filter' />
+            <card param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]' type='filter' />
+            <card param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2180790-56BE-4AB7-A870-D0AF07BFE5A8}' />
+    </window>
+    <window class='worksheet' name='Overall Sentiment Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Sentiment_Label:nk]&#10;[federated.0gpbryz1b31sfl15nswtk15we9m8].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B4340B94-C497-4402-B51A-583241E4B4A2}' />
+    </window>
+    <window class='worksheet' name='Category-wise Sentiment Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Product_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F054E1F4-7B90-4F35-AFE3-5C9FF4D2C784}' />
+    </window>
+    <window class='worksheet' name='Response Status by Sentiment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Response_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C2CEF3B9-A14B-4028-8925-C9A4FAEF9B3B}' />
+    </window>
+    <window class='worksheet' name='Product Satisfaction Metrix'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0E861610-EC50-4BD7-8C3C-342A4F170E3A}' />
+    </window>
+    <window class='worksheet' name='Customer Segment Performance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[none:Response_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B0C1065E-1607-477D-AD5C-56892BFD7D5F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Average Rating'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Sentiment Score'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Category-wise Sentiment Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Customer Segment Performance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Negative Reviews'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Overall Sentiment Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Positive Reviews'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Product Satisfaction Metrix'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Rating Distribution Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sentiment Insight by Segment'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Reviews'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='44' />
+      <simple-id uuid='{366B30C5-D345-4788-AE05-5FC4046CAD06}' />
+    </window>
+    <window class='worksheet' name='Rating Distribution Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D98E0DDC-D3EF-41B4-9648-3A72D13D5581}' />
+    </window>
+    <window class='worksheet' name='Positive Reviews'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{899CCCFD-4DFF-46F4-82ED-6CBBC1D4E5C6}' />
+    </window>
+    <window class='worksheet' name='Negative Reviews'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2D4B1F4C-5EB6-4D6E-81F4-D96AEE239948}' />
+    </window>
+    <window class='worksheet' name='Sentiment Insight by Segment'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[cnt:Order_ID:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{18D459A4-8033-4F72-93F5-C287C373D8A7}' />
+    </window>
+    <window class='worksheet' name='Sheet 14'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0gpbryz1b31sfl15nswtk15we9m8].[sum:Sentiment_Score:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7B3A1E8B-FA23-4F22-A4A6-8BF6BFFE9DFB}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
